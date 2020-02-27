@@ -62,6 +62,7 @@ setuptools.setup(
     install_requires = [
         'matplotlib>=2.0.0',  # This should be a dependency of `scikit-image`
         'numpy>=1.11.1',
+        'Pillow>=7.0.0',
         'scikit-image>=0.12.3',
         'scipy>=0.18.1',
     ],

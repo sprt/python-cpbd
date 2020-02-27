@@ -64,9 +64,9 @@ Usage
 
     In [1]: import cpbd
 
-    In [2]: from scipy import ndimage
+    In [2]: from PIL import Image
 
-    In [3]: input_image = ndimage.imread('/tmp/LIVE_Images_GBlur/img4.bmp', mode='L')
+    In [3]: input_image = Image.open('/tmp/LIVE_Images_GBlur/img4.bmp').convert('L')
 
     In [4]: cpbd.compute(input_image)
     Out[4]: 0.75343203230148048
